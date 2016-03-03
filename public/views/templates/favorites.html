@@ -1,0 +1,12 @@
+<ul class="navigators">
+    <li><a href="#animal">animal</a></li>
+    <li><a href="#favorites">favorites</a></li>
+
+</ul>
+<h1>FAVORITES page</h1>
+<div ng-repeat="critter in favorites" class="animal-container">
+    <h1>{{critter.type}}</h1>
+    <h1>{{critter.name}}</h1>
+    <img ng-src="{{critter.image_url}}" alt="pet picture" />
+    <h3>{{critter.description}}</h3>
+</div>

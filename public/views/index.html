@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Petfinder</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <script type="text/javascript" src="/vendors/angular.min.js"></script>
+    <script type="text/javascript" src="/vendors/angular-route.min.js"></script>
+    <script type="text/javascript" src="/scripts/clientapp.js"></script>
+    <script type="text/javascript" src="/scripts/factories/dataFactory.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/animalController.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/favoritesController.js"></script>
+
+</head>
+<body>
+
+    <header ng-include="'/views/templates/header.html'"></header>
+    <!--<div ng-include="'/views/templates/nav.html'"></div>-->
+
+    <main ng-view></main>
+
+    <footer ng-include="'/views/templates/footer.html'"></footer>
+</body>
+</html>

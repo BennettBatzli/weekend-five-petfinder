@@ -1,0 +1,28 @@
+<ul class="navigators">
+    <li><a href="#favorites">favorites</a></li>
+    <li><a href="#animal">home</a></li>
+</ul>
+
+<h1>ANIMAL PAGE</h1>
+    <form>
+        <select ng-model="animalType" ng-change="animalSearch()">
+            <option value="">select an animal</option>
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="barnyard">Barnyard</option>
+            <option value="bird">Bird</option>
+            <option value="pig">Pig</option>
+            <option value="reptile">Reptile</option>
+            <option value="horse">Horse</option>
+            <option value="smallfurry">Smallfurry</option>
+        </select>
+    </form>
+    <div class="animal-container">
+        <h3>{{animal.name.$t}}</h3>
+        <p>{{animal.description.$t}}</p>
+        <img class="pet-image" src="{{animal.media.photos.photo[2].$t}}" />
+    </div>
+    <div>
+        <button ng-click="addFavorite()" class="favorite-button">add to favorites</button>
+    </div>
+<!--</div>-->
